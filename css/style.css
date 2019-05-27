@@ -1,4 +1,4 @@
-html {
+html{
 	position: relative;
 }
 body {
@@ -8,6 +8,9 @@ body {
 .jumbotron img {
 	width: 200px;
 	border: 5px solid #666;
+}
+.jumbotron{
+	height: 500px;
 }
 
 hr {
@@ -44,14 +47,3 @@ footer p {
 footer p i {
 	color: salmon;
 }
-
-
-
-
-
-
-
-
-
-
-
