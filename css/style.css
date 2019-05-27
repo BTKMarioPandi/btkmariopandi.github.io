@@ -3,6 +3,7 @@ html{
 }
 body {
 	margin-bottom: 120px;
+	margin-top: 300px;
 }
 
 .jumbotron img {
@@ -10,7 +11,7 @@ body {
 	border: 5px solid #666;
 }
 .jumbotron{
-	height: 500px;
+	height: 700px;
 }
 
 hr {
