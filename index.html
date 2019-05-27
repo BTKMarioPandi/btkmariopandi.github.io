@@ -74,7 +74,7 @@ footer p i {
 
   <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top label label-info">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -88,10 +88,10 @@ footer p i {
     </div>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-user"></i> About</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-picture"></i> Portfolio</a></li>
-        <li><a href="#"><i class="glyphicon glyphicon-phone"></i> Kontak</a></li>
+        <li><a href="#" class="page-scroll"><i class="glyphicon glyphicon-home"></i> Home</a></li>
+        <li><a href="#about" class="page-scroll"><i class="glyphicon glyphicon-user"></i> About</a></li>
+        <li><a href="#portfolio" class="page-scroll"><i class="glyphicon glyphicon-picture"></i> Portfolio</a></li>
+        <li><a href="#contact" class="page-scroll"><i class="glyphicon glyphicon-phone"></i> Kontak</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -133,7 +133,7 @@ footer p i {
 
 
     <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio " id="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">
@@ -242,9 +242,23 @@ footer p i {
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+    <script>
+
+$('.page-scroll').on('click', function(e){
+  
+  var tujuan = $(this).attr('href');
+
+  var elemenTujuan = $(tujuan);
+
+  $('body').animate({
+    scrollTop: elemenTujuan.offset().top - 50
+  }, 1250, 'swing'); 
+});
+    </script>
   </body>
 </html>
 
